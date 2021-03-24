@@ -12,7 +12,9 @@ public class Task01 {
         Set<Integer> set2 = new HashSet<>();
         
         //  문자열을 읽어서 StringTokenizer를 활용하여 set에 데이터 저장
+        System.out.print( "집합 A 원소 입력 : ");
         readString(set1, br.readLine());
+        System.out.print( "집합 B 원소 입력 : ");
         readString(set2, br.readLine());
 
         br.close();

@@ -11,6 +11,7 @@ public class Task02 {
         Set<Integer> set = new HashSet<>();
         
         //  문자열을 읽어서 StringTokenizer를 활용하여 set에 데이터 저장
+        System.out.print( "집합 A 원소 입력 : " );
         readString(set, br.readLine());
 
         //  저장한 기본 집합 출력하기
