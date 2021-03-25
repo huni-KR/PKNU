@@ -13,7 +13,7 @@ public class Task02 {
         System.out.println("--------------Input--------------");
         System.out.print("modulus m = ");
         int m = sc.nextInt();
-`
+
         System.out.print("multiflier a = ");
         int a = sc.nextInt();
 
