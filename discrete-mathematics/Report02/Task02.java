@@ -9,7 +9,7 @@ public class Task02 {
         System.out.println("\n--------------Constraint--------------");
         System.out.println("2 <= a < m\t0 <= c < m\t0 <= s < m\n");
         
-        // m 
+        // 입력 받기
         System.out.println("--------------Input--------------");
         System.out.print("modulus m = ");
         int m = sc.nextInt();
@@ -28,13 +28,16 @@ public class Task02 {
         
         sc.close();
 
+        // 의사 난수를 저장할 배열
         int[] arr = new int[n];
-        arr[0] = ( a * s + c ) % m;
 
+        // 의사 난수 생성
+        arr[0] = ( a * s + c ) % m;
         for(int i=1; i<arr.length; i++){
             arr[i] = ( a * arr[i-1] + c ) % m;
         }
 
+        // 의사 난수 출력
         System.out.println("\n-------Output-------");
         for(int i=0; i<n; i++){
             System.out.println( "x[" + ( i + 1 ) + "] = " + arr[i] );
