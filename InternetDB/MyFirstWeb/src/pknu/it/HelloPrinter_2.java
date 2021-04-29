@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class HelloPrinter
  */
 @WebServlet(description = "Print Hello Message", urlPatterns = { "/hello" })
-public class HelloPrinter extends HttpServlet {
+public class HelloPrinter_2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloPrinter() {
+    public HelloPrinter_2() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,12 +28,15 @@ public class HelloPrinter extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter pw = response.getWriter();
-		pw.println("<html>");
-		pw.println("<body>");
-		pw.println("<h1>Hello World!</h1>");
-		pw.println("</body>");
-		pw.println("</html>"); 
+
+		PrintWriter out = response.getWriter();
+		out.println("<html>");
+		out.println("<title> Hello World Printer </title>");
+		out.println("<body>");
+		out.println("<h1> Hello World! </h1>");
+		out.println("</body>");
+		out.println("</html>");
+
 	}
 
 }

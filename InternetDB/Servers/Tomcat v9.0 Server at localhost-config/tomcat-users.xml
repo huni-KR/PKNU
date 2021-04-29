@@ -33,8 +33,8 @@
 
   <role rolename="tomcat"/>
   <role rolename="role1"/>
-  <user password="tomcat" roles="tomcat, manager-gui" username="tomcat"/>
-  <user password="both" roles="tomcat,role1" username="both"/>
-  <user password="role1" roles="role1" username="role1"/>
+  <user password="tomcat" roles="tomcat,manager-gui" username="tomcat"/>
+  <user password="tomcat" roles="tomcat,role1" username="both"/>
+  <user password="tomcat" roles="role1" username="role1"/>
 
 </tomcat-users>
