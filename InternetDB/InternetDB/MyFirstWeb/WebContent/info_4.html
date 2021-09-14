@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title> Hello Form </title>
+</head>
+
+<BODY BGCOLOR="#FDF5E6">
+<H2 ALIGN="CENTER"> Greeting </H2>
+
+
+<!-- method GET : URL에 표시 O -->
+<!-- <FORM ACTION="/MyServlet/greeting" > -->
+
+<!-- method POST : URL에 표시 X BODY에 쿼리스트링 포함 -->
+<FORM ACTION="/MyServlet/greeting" method="POST" >
+
+
+<CENTER>
+Name:
+
+<INPUT TYPE="TEXT" NAME="name" VALUE="KilDongHong">
+
+Dept:
+<INPUT TYPE="TEXT" NAME="dept" VALUE="ITConv">
+
+<INPUT TYPE="SUBMIT">
+</CENTER>
+
+</FORM>
+
+</BODY>
+
+</html>
