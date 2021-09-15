@@ -1,4 +1,4 @@
-# Internet Database Applications
+# Data Analysis Basics
 
 University : PKNU(PUKYONG NATIONAL UNIVERSITY)
 
